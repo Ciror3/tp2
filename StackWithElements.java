@@ -2,7 +2,7 @@ package stack;
 
 import java.util.ArrayList;
 
-class StackWithElements extends OOStack {
+class StackWithElements extends PrimeStack {
 	private ArrayList<String> contents = new ArrayList<>();
 
     @Override
@@ -11,13 +11,13 @@ class StackWithElements extends OOStack {
     }
  
     @Override
-    public OOStack push(String string) {
+    public PrimeStack push(String string) {
         contents.add(string);
         return this;
-    }
+    }   
 
     @Override
-    public String pop() {
+    public String pop() {  
     	return contents.remove(contents.size() - 1);
     }
 

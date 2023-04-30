@@ -1,24 +1,24 @@
 package stack;
  
-class StackWithoutElements extends OOStack {
+class StackWithoutElements extends PrimeStack {
 	@Override
     public boolean isEmpty() {
         return true;
-    }
-
+    } 
+  
     @Override
-    public OOStack push(String string) {
+    public PrimeStack push(String string) {
         return new StackWithElements().push(string);
-    }
+    } 
 
     @Override
     public String pop() {
-        throw new Error(Stack.stackEmptyErrorDescription);
-    }
+        throw new Error(MasterStack.stackEmptyErrorDescription);
+    } 
 
     @Override 
     public String top() {
-        throw new Error(Stack.stackEmptyErrorDescription);
+        throw new Error(MasterStack.stackEmptyErrorDescription);
     }
  
     @Override
